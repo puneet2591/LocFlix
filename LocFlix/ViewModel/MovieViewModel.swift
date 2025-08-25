@@ -20,13 +20,18 @@ final class MovieListViewModel: ObservableObject {
         self.service = service
     }
     
+    func startPullToRefresh() async {
+        movies = []
+        await loadMovies()
+    }
+    
     func loadMovies() async {
         isLoading = true
+        defer { isLoading = false }
         do {
             movies = try await service.fetchData()
         } catch {
             errorMessage = error.localizedDescription
         }
-        isLoading = false
     }
 }

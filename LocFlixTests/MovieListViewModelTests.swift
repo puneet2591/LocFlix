@@ -54,6 +54,7 @@ class MockMovieService: MockAPIService {
     }
     
     override func fetchData() async throws -> [Movie] {
+        try? await Task.sleep(nanoseconds: 3_000_000_000)
         if let error = mockError {
             throw error
         }

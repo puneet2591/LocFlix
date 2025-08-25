@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MovieListView: View {
     
-    @ObservedObject var viewModel: MovieListViewModel
+    @StateObject var viewModel: MovieListViewModel
     
     var body: some View {
         NavigationView {
@@ -21,7 +21,7 @@ struct MovieListView: View {
                         .foregroundColor(.red)
                 } else {
                     List(viewModel.movies, id: \.id) { movie in
-                        HStack {
+                        HStack(spacing: 7) {
                             NavigationLink(destination: MovieDetailView(movie: movie)) {
                                 MovieRowView(movie: movie)
                             }
@@ -32,7 +32,14 @@ struct MovieListView: View {
             .navigationTitle("Movies 🎬")
         }
         .task {
+            // initial load
             await viewModel.loadMovies()
+        }
+        .refreshable {
+            // pull to refresh
+            Task {
+                await viewModel.startPullToRefresh()
+            }
         }
     }
 }

@@ -23,7 +23,7 @@ struct LocFlixApp: App {
             mock.shouldThrowError = true
             _viewModel = StateObject(wrappedValue: MovieListViewModel(service: mock))
         } else {
-            _viewModel = StateObject(wrappedValue: MovieListViewModelFactory.createMovieViewModel(type: .real))
+            _viewModel = StateObject(wrappedValue: MovieListViewModelFactory.createMovieViewModel(type: .mock))
         }
     }
     

@@ -19,7 +19,7 @@ struct MovieRowView: View {
             height: 90
         )
         
-        VStack(alignment: .leading, spacing: 4) {
+        VStack(alignment: .leading, spacing: 5) {
             Text(movie.title)
                 .font(.headline)
             Text("⭐️ \(movie.rating, specifier: "%.1f")")

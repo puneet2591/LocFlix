@@ -21,6 +21,7 @@ class MockAPIService: APIService {
     private let baseURL = "http://localhost:3000"
     
     func fetchData() async throws -> [Movie] {
+        try? await Task.sleep(nanoseconds: 1_000_000_000)
         guard let url = URL(string: "\(baseURL)/movies") else {
             throw URLError(.badURL)
         }
