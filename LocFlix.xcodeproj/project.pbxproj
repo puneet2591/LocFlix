@@ -23,6 +23,7 @@
 		2D377C832E5BC0260010E4A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D377C822E5BC0260010E4A1 /* Constants.swift */; };
 		2D377C852E5BCA1D0010E4A1 /* MockUrlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D377C842E5BCA1D0010E4A1 /* MockUrlProtocol.swift */; };
 		2D377C8D2E5BCAC20010E4A1 /* LocFlixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D377C8C2E5BCAC20010E4A1 /* LocFlixTests.swift */; };
+		2DCC44E02E5C63990026A504 /* MovieListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCC44DF2E5C63990026A504 /* MovieListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		2D377C842E5BCA1D0010E4A1 /* MockUrlProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUrlProtocol.swift; sourceTree = "<group>"; };
 		2D377C8A2E5BCAC20010E4A1 /* LocFlixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocFlixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D377C8C2E5BCAC20010E4A1 /* LocFlixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocFlixTests.swift; sourceTree = "<group>"; };
+		2DCC44DF2E5C63990026A504 /* MovieListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				2D377C8C2E5BCAC20010E4A1 /* LocFlixTests.swift */,
+				2DCC44DF2E5C63990026A504 /* MovieListViewModelTests.swift */,
 			);
 			path = LocFlixTests;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D377C8D2E5BCAC20010E4A1 /* LocFlixTests.swift in Sources */,
+				2DCC44E02E5C63990026A504 /* MovieListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
