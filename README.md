@@ -37,7 +37,7 @@ Data is served via a **Mockoon local API** for testing.
 <img src="screenshots/darknight.png" width="250">
 
 ### Demo (VIDEO)
-![Demo](screenshots/demo)
+![Demo](screenshots/demo.gif)
 
 
 ---
