@@ -27,4 +27,17 @@ Data is served via a **Mockoon local API** for testing.
 4. Open `MovieBrowserApp.xcodeproj` in Xcode
 5. Run on Simulator
 
+## 📸 Screenshots
+
+### Home Screen
+<img src="screenshots/movies.png" width="250">
+
+### Movie Details
+<img src="screenshots/redemption.png" width="250">
+<img src="screenshots/darknight.png" width="250">
+
+### Demo (VIDEO)
+![Demo](screenshots/demo)
+
+
 ---
