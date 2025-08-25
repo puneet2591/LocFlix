@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MovieListView: View {
     
-    @StateObject var viewModel: MovieListViewModel
+    @ObservedObject var viewModel: MovieListViewModel
     
     var body: some View {
         NavigationView {

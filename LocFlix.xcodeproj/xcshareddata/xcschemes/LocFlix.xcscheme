@@ -38,6 +38,16 @@
                ReferencedContainer = "container:LocFlix.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2DCC44E42E5CEA280026A504"
+               BuildableName = "LocFlixUITests.xctest"
+               BlueprintName = "LocFlixUITests"
+               ReferencedContainer = "container:LocFlix.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

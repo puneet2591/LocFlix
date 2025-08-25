@@ -9,7 +9,18 @@ import Foundation
 
 final class MovieListViewModelFactory {
     
-    @MainActor static func createMovieViewModel() -> MovieListViewModel {
-        return MovieListViewModel(service: MockAPIService(session: .shared))
+    enum EnvironmentType {
+        case real
+        case mock
+    }
+    
+    @MainActor static func createMovieViewModel(type: EnvironmentType) -> MovieListViewModel {
+        switch type {
+        case .real:
+            return MovieListViewModel(service: RealAPIService(session: .shared))
+        case .mock:
+            return MovieListViewModel(service: MockAPIService(session: .shared))
+        }
+        
     }
 }

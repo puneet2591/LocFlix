@@ -24,10 +24,19 @@
 		2D377C852E5BCA1D0010E4A1 /* MockUrlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D377C842E5BCA1D0010E4A1 /* MockUrlProtocol.swift */; };
 		2D377C8D2E5BCAC20010E4A1 /* LocFlixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D377C8C2E5BCAC20010E4A1 /* LocFlixTests.swift */; };
 		2DCC44E02E5C63990026A504 /* MovieListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCC44DF2E5C63990026A504 /* MovieListViewModelTests.swift */; };
+		2DCC44E82E5CEA280026A504 /* LocFlixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCC44E72E5CEA280026A504 /* LocFlixUITests.swift */; };
+		2DCC44EA2E5CEA280026A504 /* LocFlixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCC44E92E5CEA280026A504 /* LocFlixUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2D377C8E2E5BCAC20010E4A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D377C502E5BADE50010E4A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D377C572E5BADE50010E4A1;
+			remoteInfo = LocFlix;
+		};
+		2DCC44EB2E5CEA280026A504 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2D377C502E5BADE50010E4A1 /* Project object */;
 			proxyType = 1;
@@ -56,6 +65,9 @@
 		2D377C8A2E5BCAC20010E4A1 /* LocFlixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocFlixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D377C8C2E5BCAC20010E4A1 /* LocFlixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocFlixTests.swift; sourceTree = "<group>"; };
 		2DCC44DF2E5C63990026A504 /* MovieListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModelTests.swift; sourceTree = "<group>"; };
+		2DCC44E52E5CEA280026A504 /* LocFlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocFlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DCC44E72E5CEA280026A504 /* LocFlixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocFlixUITests.swift; sourceTree = "<group>"; };
+		2DCC44E92E5CEA280026A504 /* LocFlixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocFlixUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2DCC44E22E5CEA280026A504 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,6 +100,7 @@
 			children = (
 				2D377C5A2E5BADE50010E4A1 /* LocFlix */,
 				2D377C8B2E5BCAC20010E4A1 /* LocFlixTests */,
+				2DCC44E62E5CEA280026A504 /* LocFlixUITests */,
 				2D377C592E5BADE50010E4A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +110,7 @@
 			children = (
 				2D377C582E5BADE50010E4A1 /* LocFlix.app */,
 				2D377C8A2E5BCAC20010E4A1 /* LocFlixTests.xctest */,
+				2DCC44E52E5CEA280026A504 /* LocFlixUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,6 +210,15 @@
 			path = LocFlixTests;
 			sourceTree = "<group>";
 		};
+		2DCC44E62E5CEA280026A504 /* LocFlixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2DCC44E72E5CEA280026A504 /* LocFlixUITests.swift */,
+				2DCC44E92E5CEA280026A504 /* LocFlixUITestsLaunchTests.swift */,
+			);
+			path = LocFlixUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,6 +257,24 @@
 			productReference = 2D377C8A2E5BCAC20010E4A1 /* LocFlixTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2DCC44E42E5CEA280026A504 /* LocFlixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DCC44ED2E5CEA280026A504 /* Build configuration list for PBXNativeTarget "LocFlixUITests" */;
+			buildPhases = (
+				2DCC44E12E5CEA280026A504 /* Sources */,
+				2DCC44E22E5CEA280026A504 /* Frameworks */,
+				2DCC44E32E5CEA280026A504 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DCC44EC2E5CEA280026A504 /* PBXTargetDependency */,
+			);
+			name = LocFlixUITests;
+			productName = LocFlixUITests;
+			productReference = 2DCC44E52E5CEA280026A504 /* LocFlixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -241,6 +289,10 @@
 						CreatedOnToolsVersion = 13.4.1;
 					};
 					2D377C892E5BCAC20010E4A1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 2D377C572E5BADE50010E4A1;
+					};
+					2DCC44E42E5CEA280026A504 = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 2D377C572E5BADE50010E4A1;
 					};
@@ -261,6 +313,7 @@
 			targets = (
 				2D377C572E5BADE50010E4A1 /* LocFlix */,
 				2D377C892E5BCAC20010E4A1 /* LocFlixTests */,
+				2DCC44E42E5CEA280026A504 /* LocFlixUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,6 +329,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2D377C882E5BCAC20010E4A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DCC44E32E5CEA280026A504 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -314,6 +374,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2DCC44E12E5CEA280026A504 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCC44EA2E5CEA280026A504 /* LocFlixUITestsLaunchTests.swift in Sources */,
+				2DCC44E82E5CEA280026A504 /* LocFlixUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -321,6 +390,11 @@
 			isa = PBXTargetDependency;
 			target = 2D377C572E5BADE50010E4A1 /* LocFlix */;
 			targetProxy = 2D377C8E2E5BCAC20010E4A1 /* PBXContainerItemProxy */;
+		};
+		2DCC44EC2E5CEA280026A504 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D377C572E5BADE50010E4A1 /* LocFlix */;
+			targetProxy = 2DCC44EB2E5CEA280026A504 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -533,6 +607,40 @@
 			};
 			name = Release;
 		};
+		2DCC44EE2E5CEA280026A504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45HT76ARHT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.locflix.com.LocFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LocFlix;
+			};
+			name = Debug;
+		};
+		2DCC44EF2E5CEA280026A504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45HT76ARHT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.locflix.com.LocFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LocFlix;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -559,6 +667,15 @@
 			buildConfigurations = (
 				2D377C912E5BCAC20010E4A1 /* Debug */,
 				2D377C922E5BCAC20010E4A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DCC44ED2E5CEA280026A504 /* Build configuration list for PBXNativeTarget "LocFlixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DCC44EE2E5CEA280026A504 /* Debug */,
+				2DCC44EF2E5CEA280026A504 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
